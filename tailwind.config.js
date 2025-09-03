@@ -1,5 +1,4 @@
 import { colors } from "./src/assets/styles/colors";
-import { fontFamily } from "./src/assets/styles/fontFamily";
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -8,7 +7,14 @@ module.exports = {
   theme: {
     extend: {
       colors,
-      fontFamily,
+      fontFamily: {
+        "poppins-light": ["Poppins_300Light"],   
+        "poppins":       ["Poppins_400Regular"], 
+        "poppins-italic":       ["Poppins_400Regular_Italic"], 
+        "poppins-semibold": ["Poppins_600SemiBold"],
+        "poppins-semibold-italic": ["Poppins_600SemiBold_Italic"],
+        "poppins-bold":  ["Poppins_700Bold"], 
+      },
     },
   },
   plugins: [],

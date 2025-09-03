@@ -2,6 +2,9 @@
 import {
   Poppins_300Light,
   Poppins_400Regular,
+  Poppins_400Regular_Italic,
+  Poppins_600SemiBold,
+  Poppins_600SemiBold_Italic,
   Poppins_700Bold,
   useFonts,
 } from "@expo-google-fonts/poppins";
@@ -15,6 +18,9 @@ export default function RootLayout() {
   const [fontsLoaded] = useFonts({
     Poppins_300Light,
     Poppins_400Regular,
+    Poppins_400Regular_Italic,
+    Poppins_600SemiBold,
+    Poppins_600SemiBold_Italic,
     Poppins_700Bold,
   });
 
