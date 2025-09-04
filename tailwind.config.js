@@ -13,7 +13,8 @@ module.exports = {
         "poppins-italic":       ["Poppins_400Regular_Italic"], 
         "poppins-semibold": ["Poppins_600SemiBold"],
         "poppins-semibold-italic": ["Poppins_600SemiBold_Italic"],
-        "poppins-bold":  ["Poppins_700Bold"], 
+        "poppins-bold":  ["Poppins_700Bold"],
+        "poppins-extrabold":  ["Poppins_800ExtraBold"]
       },
     },
   },

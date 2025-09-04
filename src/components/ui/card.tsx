@@ -9,7 +9,7 @@ type CardProps = PropsWithChildren<ViewProps> & {
 export default function Card({ children, className = "", ...rest }: CardProps) {
   return (
     <View
-      className={`flex-1 bg-white rounded-xl drop-shadow-2xl shadow-black p-4 ${className}`}
+      className={`flex w-full h-fit bg-white rounded-xl drop-shadow-2xl shadow-black ${className}`}
       {...rest}
     >
       {children}
