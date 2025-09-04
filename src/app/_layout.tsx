@@ -6,6 +6,7 @@ import {
   Poppins_600SemiBold,
   Poppins_600SemiBold_Italic,
   Poppins_700Bold,
+  Poppins_800ExtraBold,
   useFonts,
 } from "@expo-google-fonts/poppins";
 import { Stack } from "expo-router";
@@ -22,6 +23,7 @@ export default function RootLayout() {
     Poppins_600SemiBold,
     Poppins_600SemiBold_Italic,
     Poppins_700Bold,
+    Poppins_800ExtraBold,
   });
 
   if (!fontsLoaded) {
