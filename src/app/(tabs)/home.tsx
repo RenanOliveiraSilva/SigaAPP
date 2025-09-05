@@ -3,11 +3,13 @@ import AntDesign from "@expo/vector-icons/AntDesign";
 import Feather from "@expo/vector-icons/Feather";
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 import { LinearGradient } from "expo-linear-gradient";
-import { Image, Text, TouchableOpacity, View } from "react-native";
+import { Image, ScrollView, Text, TouchableOpacity, View } from "react-native";
 
 export default function Home() {
   return (
     <View className="flex-1 w-full px-5 py-4">
+      {/* <============== CARD HEADER ===============> */}
+
       <Card className="p-5 mb-8 bg-transparent">
         <LinearGradient
           colors={["#333333", "#E23636"]} // ajuste fino abaixo
@@ -63,6 +65,8 @@ export default function Home() {
           </Text>
         </View>
       </Card>
+
+      {/* <============== CARDS ACTIONS ===============> */}
 
       <View className="flex flex-row w-full mb-8 gap-4">
         <TouchableOpacity
@@ -146,6 +150,113 @@ export default function Home() {
           </TouchableOpacity>
         </View>
       </View>
+
+      {/* <============== SCROLL AREA ===============> */}
+
+      <ScrollView
+        className="flex-1 p-0"
+        showsVerticalScrollIndicator={false}
+        horizontal={true}
+        showsHorizontalScrollIndicator={true}
+        contentContainerStyle={{ padding: 0, margin: 0 }}
+        alwaysBounceHorizontal={true}
+      >
+        <LinearGradient
+          colors={["#333333", "#9C1616"]} // topo -> base
+          start={{ x: 0.1, y: 0.2 }}
+          end={{ x: 0.9, y: 1 }}
+          className="flex mr-3 text-center justify-center h-full w-fit px-4 min-w-0 rounded-3xl overflow-hidden"
+        >
+          <TouchableOpacity activeOpacity={0.7} className="">
+            <View className="image w-full text-center justify-center items-center">
+              <Image
+                source={require("../../assets/images/book-love.png")}
+                className="w-44 h-40 mb-2"
+              />
+            </View>
+            <View className="text w-full text-center justify-center items-center">
+              <Text className="font-poppins-extrabold text-lg color-white">
+                Veja sua História
+              </Text>
+              <Text className="font-poppins-regular text-xs color-white">
+                Visualize seu histórico acadêmico{" "}
+              </Text>
+            </View>
+          </TouchableOpacity>
+        </LinearGradient>
+
+        <LinearGradient
+          colors={["#9C1616", "#333333"]} // topo -> base
+          start={{ x: 0.1, y: 0.2 }}
+          end={{ x: 0.9, y: 1 }}
+          className="flex text-center justify-center h-full w-fit px-4 min-w-0 rounded-3xl overflow-hidden mr-3"
+        >
+          <TouchableOpacity activeOpacity={0.7} className="">
+            <View className="image w-full text-center justify-center items-center">
+              <Image
+                source={require("../../assets/images/world-bro.png")}
+                className="w-44 h-40 mb-2"
+              />
+            </View>
+            <View className="text w-full text-center justify-center items-center">
+              <Text className="font-poppins-extrabold text-lg color-white">
+                Explore o Campus
+              </Text>
+              <Text className="font-poppins-regular text-xs color-white">
+                Verifique os Locais de Aula
+              </Text>
+            </View>
+          </TouchableOpacity>
+        </LinearGradient>
+
+        <LinearGradient
+          colors={["#9C1616", "#333333"]} // topo -> base
+          start={{ x: 0, y: 0.4 }}
+          end={{ x: 0.9, y: 0 }}
+          className="flex text-center justify-center h-full w-fit px-4 min-w-0 rounded-3xl overflow-hidden mr-3"
+        >
+          <TouchableOpacity activeOpacity={0.7} className="">
+            <View className="image w-full text-center justify-center items-center">
+              <Image
+                source={require("../../assets/images/timeline.png")}
+                className="w-44 h-40 mb-2"
+              />
+            </View>
+            <View className="text w-full text-center justify-center items-center">
+              <Text className="font-poppins-extrabold text-lg color-white">
+                Veja a sua timeline
+              </Text>
+              <Text className="font-poppins-regular text-xs color-white">
+                Acompanhe sua evolução
+              </Text>
+            </View>
+          </TouchableOpacity>
+        </LinearGradient>
+
+        <LinearGradient
+          colors={["#9C1616", "#333333"]} // topo -> base
+          start={{ x: 0.1, y: 0.2 }}
+          end={{ x: 0.9, y: 1 }}
+          className="flex text-center justify-center h-full w-fit px-4 min-w-0 rounded-3xl overflow-hidden"
+        >
+          <TouchableOpacity activeOpacity={0.7} className="">
+            <View className="image w-full text-center justify-center items-center">
+              <Image
+                source={require("../../assets/images/upload-bro.png")}
+                className="w-44 h-40 mb-2"
+              />
+            </View>
+            <View className="text w-full text-center justify-center items-center">
+              <Text className="font-poppins-extrabold text-lg color-white">
+                Gere documentos
+              </Text>
+              <Text className="font-poppins-regular text-xs color-white">
+                Exporte seus dados
+              </Text>
+            </View>
+          </TouchableOpacity>
+        </LinearGradient>
+      </ScrollView>
     </View>
   );
 }
